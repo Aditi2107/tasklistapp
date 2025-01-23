@@ -3,7 +3,7 @@ from flask_cors import CORS
 from models import db, Task
 from sqlalchemy import and_
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "https://adititasklist1.netlify.app"}})
+CORS(app, resources={r"/*": {"origins": "https://adititasklist1.netlify.app"}})  
 
 # Configurations
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
